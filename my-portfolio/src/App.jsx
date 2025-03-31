@@ -17,17 +17,21 @@ function App() {
 
         {/* Social Links with Icons */}
         <div className="flex justify-center space-x-6 mt-4">
-          <a href="https://github.com/abhishrey/" className="hover:text-gray-300">
+          <a href="https://github.com/abhishrey/" className="!text-white hover:text-gray-300 flex items-center space-x-2">
             <FaGithub size={24} />
+            <span>GitHub</span>
           </a>
-          <a href="https://www.linkedin.com/in/abhishreya-sharma" className="hover:text-gray-300">
+          <a href="https://www.linkedin.com/in/abhishreya-sharma" className="!text-white hover:text-gray-300 flex items-center space-x-2">
             <FaLinkedin size={24} />
+            <span>LinkedIn</span>
           </a>
           <a href="https://drive.google.com/file/d/1JQqScSJFojFO6eAbo_j1kjd11CKSQ159/view?usp=drive_link"
-            className="hover:text-gray-300">
+            className="!text-white hover:text-gray-300 flex items-center space-x-2">
             <FaFileDownload size={24} />
+            <span>Resume</span>
           </a>
         </div>
+
 
       </header>
       
@@ -38,7 +42,7 @@ function App() {
           <h2 className="text-4xl font-extrabold mb-4 tracking-wide">About Me</h2>
           <p className="text-lg leading-relaxed">
             I'm a <span className="font-bold text-yellow-400">Master's student in Informatik</span> with <span className="font-bold text-yellow-400">3.5+ years</span> of experience in Web & Software Development.  
-            Passionate about leveraging technology to solve real-world problems.
+            I'm Passionate about leveraging technology to solve real-world problems.
           </p>
           <p className="text-lg mt-4">
             My expertise includes <span className="font-semibold text-yellow-400">JavaScript, Python, React, Angular, and CI/CD</span>.  
