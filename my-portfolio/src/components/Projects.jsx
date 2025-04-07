@@ -44,7 +44,7 @@ function Projects() {
             <li>Implemented SQLite for lightweight persistence and session management</li>
             <li>Used GitLab for version control</li>
           </ul>
-          <span className="text-blue-600 text-sm mt-4 block">React | Flask | SQLite | GitLab</span>
+          <span className="text-blue-600 text-sm mt-4 block">React | Python | Flask | SQLite | GitLab</span>
         </div>
 
         {/* Project Card */}
@@ -58,7 +58,6 @@ function Projects() {
             <li>Performed clustering and pattern analysis to group engagement styles</li>
             <li>Built an interactive Streamlit dashboard for visualizing key patterns</li>
             <li>Stored and queried data with MySQL for efficient retrieval</li>
-            <li>Developed the UI using Streamlit for intuitive interaction and exploration</li>
           </ul>
           <span className="text-blue-600 text-sm mt-4 block">MySQL | Python | Streamlit | Pandas</span>
         </div>
