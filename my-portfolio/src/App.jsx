@@ -1,4 +1,5 @@
-import React from 'react';
+import React, { useEffect } from 'react';
+import ReactGA from 'react-ga4';
 import Header from "./components/Header";
 import Aboutme from "./components/Aboutme";
 import Skills from "./components/Skills";
@@ -6,6 +7,10 @@ import Experience from "./components/Experience";
 import Projects from "./components/Projects";
 import Languages from "./components/Languages";
 function App() {
+  useEffect(() => {
+    ReactGA.initialize('G-Q4GKRT5FE2');
+    ReactGA.send('pageview');
+  }, []);
   return (
     <div className="min-h-screen bg-gray-100 text-gray-900">
       <Header /> 
