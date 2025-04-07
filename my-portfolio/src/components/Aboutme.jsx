@@ -27,10 +27,10 @@ function Aboutme() {
             <FaRegEnvelope className="text-3xl" /> 
             <span>Contact Me</span>
           </a>
-          <a href="https://drive.google.com/file/d/1JQqScSJFojFO6eAbo_j1kjd11CKSQ159/view?usp=drive_link" target="_blank" rel="noopener noreferrer" className="flex items-center gap-2 bg-white text-blue-600 px-6 py-3 rounded-lg shadow-md transition-all duration-300 transform hover:bg-blue-600 hover:text-white hover:scale-105">
+          {/* <a href="https://drive.google.com/file/d/1JQqScSJFojFO6eAbo_j1kjd11CKSQ159/view?usp=drive_link" target="_blank" rel="noopener noreferrer" className="flex items-center gap-2 bg-white text-blue-600 px-6 py-3 rounded-lg shadow-md transition-all duration-300 transform hover:bg-blue-600 hover:text-white hover:scale-105">
             <FaFileDownload className="text-3xl" /> 
             <span>Download Resume</span>
-          </a>
+          </a> */}
         </div>
       </div>
       <div className="md:w-1/3 flex justify-center mt-8 md:mt-0">
