@@ -8,8 +8,22 @@ import Projects from "./components/Projects";
 import Languages from "./components/Languages";
 function App() {
   useEffect(() => {
-    ReactGA.initialize('G-Q4GKRT5FE2');
-    ReactGA.send('pageview');
+    const script = document.createElement('script');
+    script.src = `https://www.googletagmanager.com/gtag/js?id=G-Q4GKRT5FE2`;
+    script.async = true;
+    document.head.appendChild(script);
+
+    script.onload = () => {
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'G-Q4GKRT5FE2');
+      window.onpopstate = () => {
+        gtag('config', 'G-Q4GKRT5FE2', {
+          page_path: window.location.pathname,
+        });
+      };
+    };
   }, []);
   return (
     <div className="min-h-screen bg-gray-100 text-gray-900">
