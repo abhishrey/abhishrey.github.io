@@ -1,6 +1,6 @@
 import React, { useEffect } from 'react';
 import { FaPython, FaJs, FaHtml5, FaCss3, FaFlask, FaReact, FaAngular, FaDocker, FaGit, FaJira } from 'react-icons/fa';
-import { SiStreamlit, SiPandas, SiNumpy, SiGithubactions, SiJfrogpipelines } from "react-icons/si";
+import { SiStreamlit, SiPandas, SiNumpy, SiGithubactions, SiJfrogpipelines, SiGooglecloud } from "react-icons/si";
 import { TbApi, TbSql } from "react-icons/tb";
 import { FaSyncAlt } from "react-icons/fa";
 import { MdEventAvailable, MdLeaderboard } from "react-icons/md";
@@ -64,6 +64,7 @@ function Skills() {
               { icon: <SiGithubactions />, label: "GitHub Actions", color: "bg-cyan-700" },
               { icon: <TbApi />, label: "REST API", color: "bg-indigo-600" },
               { icon: <SiJfrogpipelines />, label: "CI/CD", color: "bg-red-600" },
+              { icon: <SiGooglecloud />, label: "Google Cloud", color: "bg-cyan-400" },
               { icon: <FaJira />, label: "Jira", color: "bg-yellow-600" },
             ].map((skill, index) => (
               <div key={index} className={`${skill.color} text-white rounded-full px-6 py-3 flex items-center gap-2 shadow-md transition-all duration-300 hover:scale-105 hover:shadow-lg`}>
