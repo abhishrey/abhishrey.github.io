@@ -5,6 +5,10 @@
   text-align: center;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 .logo {
   height: 6em;
   padding: 1.5em;
@@ -39,4 +43,13 @@
 
 .read-the-docs {
   color: #888;
+}
+
+::-webkit-scrollbar {
+  width: 8px;
+  background: #e0e7ef;
+}
+::-webkit-scrollbar-thumb {
+  background: #b4c6e7;
+  border-radius: 8px;
 }

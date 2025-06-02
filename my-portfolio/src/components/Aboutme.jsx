@@ -2,41 +2,41 @@ import React, { useEffect } from 'react';
 import profilePic from '../assets/abhi_img.png';
 import { FaRegEnvelope, FaFileDownload } from 'react-icons/fa';
 import AOS from 'aos';
-import 'aos/dist/aos.css'; 
+import 'aos/dist/aos.css';
+
 function Aboutme() {
-    useEffect(() => {
-    AOS.init({
-      duration: 1000, 
-    });
+  useEffect(() => {
+    AOS.init({ duration: 1000 });
   }, []);
   return (
-    <section className="py-16 px-10 bg-gradient-to-br from-blue-500 to-indigo-600 text-white rounded-lg shadow-lg mx-4 mt-12 flex flex-col md:flex-row items-start" data-aos="fade-up">
-      <div className="md:w-2/3 text-center md:text-left animate-fadeIn">
-        <h2 className="text-4xl font-extrabold mb-4 tracking-wide">About Me</h2>
-        <p className="text-lg leading-relaxed">
-          I'm a <span className="font-bold text-yellow-400">Master's student in Informatik</span> with <span className="font-bold text-yellow-400">3.5+ years</span> of experience in Web & Software Development. Passionate about leveraging technology to solve real-world problems.
+    <section className="relative flex flex-col md:flex-row items-center justify-between gap-8 md:gap-12 px-4 sm:px-8 py-14 sm:py-20 bg-gradient-to-br from-blue-500 via-indigo-500 to-blue-700 rounded-3xl shadow-2xl" data-aos="fade-up">
+      <div className="w-full md:w-2/3 text-center md:text-left">
+        <h2 className="text-3xl sm:text-4xl md:text-5xl font-extrabold mb-6 tracking-tight text-white drop-shadow-lg">Hi, I'm Abhishreya 👋</h2>
+        <p className="text-lg sm:text-xl text-white/90 leading-relaxed mb-4">
+          I am a <span className="font-bold text-yellow-300">Software Engineer</span> with <span className="font-bold text-yellow-300">3.5+ years</span> of experience in Web & Software Development. Passionate about leveraging technology to solve real-world problems.
         </p>
-        <p className="text-lg mt-4">
-          My expertise includes <span className="font-semibold text-yellow-400">JavaScript, Python, React, REST API and CI/CD</span>.  
-          I thrive in dynamic environments and love building scalable, efficient solutions.
+        <p className="text-base sm:text-lg text-white/80 mb-6">
+          My expertise includes <span className="font-semibold text-yellow-200">React, JavaScript, Python, REST API, and CI/CD</span>. I thrive in dynamic environments and love building scalable, efficient solutions.
         </p>
-
-        <div className="flex justify-start items-center gap-x-6 mt-6">
-          <a href="mailto:abhishreyas10@gmail.com" 
-            className="flex items-center gap-2 bg-white text-blue-600 px-6 py-3 rounded-lg shadow-md transition-all duration-300 transform hover:bg-blue-600 hover:text-white hover:scale-105">
-            <FaRegEnvelope className="text-3xl" /> 
-            <span>Contact Me</span>
+        <div className="flex flex-col sm:flex-row gap-4 justify-center md:justify-start">
+          <a href="mailto:abhishreyas10@gmail.com"
+            className="flex items-center gap-2 bg-white text-blue-700 px-6 py-3 rounded-lg shadow-md font-semibold hover:bg-blue-600 hover:text-white transition">
+            <FaRegEnvelope className="text-2xl" />
+            Contact Me
           </a>
-          {/* <a href="https://drive.google.com/file/d/1JQqScSJFojFO6eAbo_j1kjd11CKSQ159/view?usp=drive_link" target="_blank" rel="noopener noreferrer" className="flex items-center gap-2 bg-white text-blue-600 px-6 py-3 rounded-lg shadow-md transition-all duration-300 transform hover:bg-blue-600 hover:text-white hover:scale-105">
-            <FaFileDownload className="text-3xl" /> 
-            <span>Download Resume</span>
+          {/* <a href="https://drive.google.com/file/d/1JQqScSJFojFO6eAbo_j1kjd11CKSQ159/view?usp=drive_link"
+            target="_blank" rel="noopener noreferrer"
+            className="flex items-center gap-2 bg-white text-blue-700 px-6 py-3 rounded-lg shadow-md font-semibold hover:bg-blue-600 hover:text-white transition">
+            <FaFileDownload className="text-2xl" />
+            Download Resume
           </a> */}
         </div>
       </div>
-      <div className="md:w-1/3 flex justify-center mt-8 md:mt-0">
-        <img src={profilePic} alt="Profile" 
-          className="w-40 h-40 md:w-48 md:h-48 rounded-full border-4 border-white shadow-lg object-cover transition-transform duration-300 hover:scale-110" />
+      <div className="w-full md:w-1/3 flex justify-center mt-8 md:mt-0">
+        <img src={profilePic} alt="Profile"
+          className="w-36 h-36 sm:w-52 sm:h-52 md:w-64 md:h-64 rounded-full border-8 border-white shadow-xl object-cover hover:scale-105 transition-transform duration-300" />
       </div>
+      <div className="absolute inset-0 rounded-3xl pointer-events-none" style={{background: "radial-gradient(circle at 80% 20%, #fff3, transparent 70%)"}} />
     </section>
   );
 }

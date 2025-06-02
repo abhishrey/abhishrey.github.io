@@ -1,27 +1,27 @@
 import React, { useEffect } from 'react';
+import { FaLanguage } from 'react-icons/fa';
 import AOS from 'aos';
-import 'aos/dist/aos.css'; 
-function Languages() {
-    useEffect(() => {
-        AOS.init({
-          duration: 1000, 
-        });
-      }, []);
-  return (
-        <section className="py-20 px-10 bg-white" data-aos="fade-up">
-        <h2 className="text-2xl font-bold text-center mb-6">Languages</h2>
+import 'aos/dist/aos.css';
 
-        <div className="flex flex-wrap justify-center gap-4">
-          <div className="bg-blue-500 text-white rounded-full px-6 py-3 shadow-md">
-            English - Professional
+function Languages() {
+  useEffect(() => {
+    AOS.init({ duration: 1000 });
+  }, []);
+  return (
+    <section className="py-12 sm:py-20 px-2 sm:px-8" data-aos="fade-up">
+      <div className="">
+        <h2 className="text-xl sm:text-2xl font-bold text-center mb-6 text-blue-700">Languages</h2>
+        <div className="flex flex-wrap justify-center gap-4 sm:gap-6">
+          <div className="flex items-center gap-3 bg-blue-500 text-white rounded-full px-8 py-4 shadow-lg text-lg font-semibold">
+            <FaLanguage className="text-2xl" /> English - Professional
           </div>
-          <div className="bg-green-500 text-white rounded-full px-6 py-3 shadow-md">
-            German - Intermediate
+          <div className="flex items-center gap-3 bg-green-500 text-white rounded-full px-8 py-4 shadow-lg text-lg font-semibold">
+            <FaLanguage className="text-2xl" /> German - Intermediate
           </div>
         </div>
-      </section>
-      
-    );
-  }
-  
-  export default Languages;
+      </div>
+    </section>
+  );
+}
+
+export default Languages;
