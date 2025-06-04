@@ -23,7 +23,7 @@ function Projects() {
               <li>Developed and tuned a K-Nearest Neighbors (KNN) model for anomaly detection</li>
               <li>Automated training, evaluation, deployment & batch predictions</li>
               <li>Enabled CI/CD with GitHub Actions and Dockerized components</li>
-              <li>Integrated model monitoring and experiment tracking</li>
+              <li>Developed a frontend interface for monitoring predictions and integrated model monitoring and experiment tracking</li>
             </ul>
             <span className="text-blue-600 text-sm mt-4 block">Python | GCP | Docker | GitHub Actions | Pandas</span>
           </div>
@@ -54,10 +54,10 @@ function Projects() {
             <ul className="text-gray-700 text-sm mt-4 list-disc list-outside pl-5 space-y-1">
               <li>Cleaned and processed large-scale learner interaction data with Pandas</li>
               <li>Performed clustering and pattern analysis to group engagement styles</li>
-              <li>Built an interactive Streamlit dashboard for visualizing key patterns</li>
+              <li>Built an interactive React dashboard for visualizing key patterns</li>
               <li>Stored and queried data with MySQL for efficient retrieval</li>
             </ul>
-            <span className="text-blue-600 text-sm mt-4 block">MySQL | Python | Streamlit | Pandas</span>
+            <span className="text-blue-600 text-sm mt-4 block">MySQL | Python | React | Pandas</span>
           </div>
         </div>
       </div>
